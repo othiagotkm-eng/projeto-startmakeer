@@ -2,6 +2,7 @@ import Router from "next/router";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import ModalForm from "@/components/Budget/Modal";
+import router from "next/router";
 
 interface StickFooterProps {
   title: string;
@@ -66,7 +67,7 @@ const StickFooter = ({ title, buttonText }: StickFooterProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
-    setIsModalOpen(true);
+    router.push("/thankYou");
   };
 
   const handleModalClose = () => {
