@@ -9,6 +9,7 @@ const ModalForm = ({ onClose }: { onClose: () => void }) => {
     budget: "",
     instagram: "",
     site: "",
+    msg_send: "",
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,13 +27,21 @@ const ModalForm = ({ onClose }: { onClose: () => void }) => {
       return;
     }
 
+    const cleanedPhone = phone.replace(/\D/g, "");
+    const formattedPhone = cleanedPhone.startsWith("55")
+      ? cleanedPhone
+      : `55${cleanedPhone}`;
+
+    const msg_send = `Olá ${name}! Você poderia explicar um pouco como seria o seu site?`;
+
     const payload = {
       name,
       email,
-      phone,
-      budget,
-      instagram,
-      site,
+      phone: formattedPhone,
+      // budget,
+      // instagram,
+      // site,
+      msg_send,
     };
 
     try {
@@ -93,27 +102,27 @@ const ModalForm = ({ onClose }: { onClose: () => void }) => {
             value={formData.phone}
             onChange={handleInputChange}
           />
-          <input
+          {/* <input
             type="text"
             name="budget"
             placeholder="Orçamento (opicional)"
             value={formData.budget}
             onChange={handleInputChange}
-          />
-          <input
+          /> */}
+          {/* <input
             type="text"
             name="instagram"
             placeholder="Instagram (opicional)"
             value={formData.instagram}
             onChange={handleInputChange}
-          />
-          <input
+          /> */}
+          {/* <input
             type="text"
             name="site"
             placeholder="Site (opicional)"
             value={formData.site}
             onChange={handleInputChange}
-          />
+          /> */}
           <button type="submit">RECEBER ORÇAMENTO GRÁTIS</button>
         </form>
       </div>

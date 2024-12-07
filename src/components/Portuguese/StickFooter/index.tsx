@@ -86,7 +86,7 @@ const StickFooter = ({ title, buttonText }: StickFooterProps) => {
           <div className={styles.button}>
             <button onClick={handleModalOpen} id="iniciar-checkout">
               <p>
-                {buttonText} <img src="buttonArrow.svg" />
+                {buttonText} <img src="/public/buttonArrow.svg" />
               </p>
             </button>
           </div>
