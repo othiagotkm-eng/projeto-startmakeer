@@ -29,7 +29,7 @@ const Cost = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    router.push("/orcamento");
+    router.push("/organic/orcamento");
   };
 
   return (
