@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import router from "next/router";
 
 const ModalForm = ({ onClose }: { onClose: () => void }) => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const ModalForm = ({ onClose }: { onClose: () => void }) => {
       );
 
       if (response.ok) {
-        alert("Formulário enviado com sucesso!");
+        router.push("/thankYou");
       } else {
         alert("Erro ao enviar o formulário. Tente novamente.");
       }
