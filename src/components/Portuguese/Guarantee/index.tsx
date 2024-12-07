@@ -5,6 +5,7 @@ import Image from "next/image";
 const Guarantee = () => {
   return (
     <main className={styles.container}>
+      {/* @ts-ignore */}
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
         <div className={styles.content}>
           <div className={styles.top}>
