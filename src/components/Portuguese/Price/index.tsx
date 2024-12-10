@@ -37,7 +37,7 @@ const Price = ({ title }: PriceProps) => {
                 });
             }
 
-            let redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
+            let redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
 
             Router.push(redirectUrl);
         }
@@ -124,7 +124,7 @@ const Price = ({ title }: PriceProps) => {
                                     <p>TUDO ISSO POR APENAS</p>
                                 </div>
                                 <div className={styles.bigMoney}>
-                                    <h2>R$ 97,00</h2>
+                                    <h2>R$ 197,00</h2>
                                     <h3>/Ano</h3>
                                 </div>
                                 <div className={styles.middleMoney}>

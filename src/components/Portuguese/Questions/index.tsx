@@ -51,7 +51,7 @@ const Questions = () => {
                     />
                     <Accordion
                         title="Quanto é o preço do curso?"
-                        content="O curso é um investimento de apenas $97,00 por ano!"
+                        content="O curso é um investimento de apenas $197,00 por ano!"
                     />
                     <Accordion
                         title="O que eu vou aprender?"

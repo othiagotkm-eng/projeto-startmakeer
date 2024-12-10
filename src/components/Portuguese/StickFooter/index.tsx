@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 interface StickFooterProps {
     title: string;
-    buttonText: string; // Nova prop para o texto do botão
+    buttonText: string;
 }
 
 const StickFooter = ({ title, buttonText }: StickFooterProps) => {
@@ -18,10 +18,8 @@ const StickFooter = ({ title, buttonText }: StickFooterProps) => {
             const fullHeight = document.documentElement.scrollHeight;
 
             if (scrollTop > 400 && scrollTop + windowHeight < fullHeight - 50) {
-                // Mostra o botão se o scroll passar de 400 e não estiver no final
                 setIsVisible(true);
             } else {
-                // Esconde o botão ao voltar ou chegar ao final da página
                 setIsVisible(false);
             }
         };
@@ -33,43 +31,13 @@ const StickFooter = ({ title, buttonText }: StickFooterProps) => {
         };
     }, []);
 
-    const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-
-        if (typeof window !== 'undefined') {
-            import('react-facebook-pixel')
-                .then((module) => {
-                    const ReactPixel = module.default;
-                    ReactPixel.track('InitiateCheckout', {
-                        content_name: 'Curso',
-                        value: 17.0,
-                        currency: 'BRL',
-                    });
-                })
-                .catch((err) =>
-                    console.error('Failed to load React Facebook Pixel', err)
-                );
-            if (window.gtag) {
-                window.gtag('event', 'InitiateCheckout', {
-                    event_category: 'engagement',
-                    event_label: 'Curso Checkout',
-                    value: 17.0,
-                    currency: 'BRL',
-                });
-            }
-            let redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
-
-            Router.push(redirectUrl);
-        }
-    };
-
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleModalOpen = () => {
         if (Router.pathname !== '/curso') {
             setIsModalOpen(true);
         } else {
-            let redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
+            let redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
 
             Router.push(redirectUrl);
         }

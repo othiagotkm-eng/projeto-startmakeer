@@ -31,7 +31,7 @@ const SectionTwo = ({ title }: SectionTwoProps) => {
                 });
             }
 
-            let redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
+            let redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
 
             Router.push(redirectUrl);
         }

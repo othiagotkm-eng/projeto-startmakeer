@@ -31,7 +31,7 @@ const SectionOne = ({ title }: SectionOneProps) => {
                 });
             }
 
-            let redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
+            let redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
             if (title === 'tiktok-organico') {
                 redirectUrl = 'https://pay.kiwify.com.br/NiELVlQ';
             } else if (title === 'tiktok-ads') {
@@ -43,7 +43,7 @@ const SectionOne = ({ title }: SectionOneProps) => {
             } else if (title === 'instagram-ads') {
                 redirectUrl = 'https://pay.kiwify.com.br/kvegj2I';
             } else if (title === 'instagram-organico') {
-                redirectUrl = 'https://pay.kiwify.com.br/UyOtZiG';
+                redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
             }
 
             router.push(redirectUrl);
@@ -77,7 +77,7 @@ const SectionOne = ({ title }: SectionOneProps) => {
 
                             <div className={styles.discount}>
                                 <img src="/discountTag.svg" />
-                                <p>Apenas R$ 97,00.</p>
+                                <p>Apenas R$ 197,00.</p>
                             </div>
                         </div>
                     </ScrollAnimation>
