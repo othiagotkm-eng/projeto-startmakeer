@@ -47,7 +47,7 @@ const ModalForm = ({ onClose }: { onClose: () => void }) => {
 
     try {
       const response = await fetch(
-        "https://webhookn8n.maistickets.com.br/webhook/rd-station",
+        "https://webhookn8n.maistickets.com.br/webhook/rd-n8n-evo-graph",
         {
           method: "POST",
           headers: {
