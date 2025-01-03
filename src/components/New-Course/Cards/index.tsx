@@ -4,11 +4,12 @@ export default function Cards() {
   return (
     <div className={styles.content}>
       <div className={styles.top}>
-        <p>O DESAFIO</p>
-        <h2>o que você vai encarar?</h2>
+        <p>O CURSO</p>
+        <h2>o que você vai aprender?</h2>
         <h5>
-          Enfrente desafios reais do dia a dia de um dev. seja iniciante ou
-          <br /> experiente, evolua e ganhe destaque na comunidade.
+          Aprenda de forma prática e simples a criar sites modernos do zero.
+          <br /> Não importa o seu nível de conhecimento, você pode começar
+          agora!
         </h5>
       </div>
       <div className={styles.middle}>
@@ -16,39 +17,50 @@ export default function Cards() {
           <div className={styles.card1}>
             <h3>
               <img src="/licon1.svg" alt="" />
-              MÃO NA MASSA
+              HTML
             </h3>
-            <p>Desafios práticos para te colocar no centro da ação.</p>
+            <p>
+              Domine a base de qualquer site e estruture suas páginas com
+              eficiência.
+            </p>
           </div>
           <div className={styles.card2}>
             <h3>
-              <img src="/licon2.svg" alt="" /> APRENDIZADO
+              <img src="/licon2.svg" alt="" /> CSS
             </h3>
-            <p>Receba feedback e insights que fazem a diferença.</p>
+            <p>
+              Aprenda a estilizar seus sites com designs incríveis e
+              responsivos.
+            </p>
           </div>
         </div>
         <div className={styles.middleBottom}>
           <div className={styles.card}>
             <h3>
-              <img src="/licon3.svg" alt="" /> AULAS
+              <img src="/licon3.svg" alt="" /> JAVASCRIPT
             </h3>
-            <p>Conecte-se com outros devs que compartilham a mesma paixão.</p>
+            <p>Adicione interatividade e dinamismo às suas páginas da web.</p>
           </div>
           <div className={styles.card}>
             <h3>
-              <img src="/licon4.svg" alt="" /> FERRAMENTAS
+              <img src="/licon4.svg" alt="" /> PROJETOS PRÁTICOS
             </h3>
-            <p>Conecte-se com outros devs que compartilham a mesma paixão.</p>
+            <p>
+              Crie projetos reais para aplicar seus conhecimentos e montar seu
+              portfólio.
+            </p>
           </div>
           <div className={styles.card}>
             <h3>
-              <img src="/licon5.svg" alt="" /> COMUNIDADE
+              <img src="/licon5.svg" alt="" /> SUPORTE EXCLUSIVO
             </h3>
-            <p>Conecte-se com outros devs que compartilham a mesma paixão.</p>
+            <p>
+              Conte com ajuda especializada para tirar todas as suas dúvidas.
+            </p>
           </div>
         </div>
       </div>
-      <button>quero ser o rei do código</button>
+      <button>quero aprender agora</button>
     </div>
   );
 }

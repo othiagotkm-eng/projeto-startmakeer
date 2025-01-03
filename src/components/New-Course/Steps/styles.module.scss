@@ -83,6 +83,7 @@
 .cardTop {
   display: flex;
   align-items: center;
+  gap: 10px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 10px;

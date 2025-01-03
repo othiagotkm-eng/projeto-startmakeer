@@ -4,35 +4,35 @@ export default function Section2() {
   return (
     <div className={styles.content}>
       <div className={styles.leftside}>
-        <img src="/course.png" alt="" />
+        <img src="/course.png" alt="Curso de HTML, CSS e JavaScript" />
       </div>
       <div className={styles.rightside}>
-        <p>O DESAFIO</p>
+        <p>O CURSO</p>
         <h2>
-          Desafio, <span>Aprendizado</span> <br />e Recompensas!
+          Prática, <span>Aprendizado</span> <br />e Resultados Reais!
         </h2>
         <div className={styles.row}>
-          <img src="/icon1.svg" alt="" />
+          <img src="/icon1.svg" alt="Ícone prática" />
           <div className={styles.text}>
-            <h4>Aprenda na Prática</h4>
-            <h5>Um desafio 100% prático com mentorias.</h5>
+            <h4>Aprenda do Zero</h4>
+            <h5>Construa seu primeiro site sem complicações.</h5>
           </div>
         </div>
         <div className={styles.row}>
-          <img src="/icon2.svg" alt="" />
+          <img src="/icon2.svg" alt="Ícone prática" />
           <div className={styles.text}>
-            <h4>Aprenda na Prática</h4>
-            <h5>Um desafio 100% prático com mentorias.</h5>
+            <h4>Desenvolva na Prática</h4>
+            <h5>Aprenda HTML, CSS e JavaScript com exercícios práticos.</h5>
           </div>
         </div>
         <div className={styles.row}>
-          <img src="/icon3.svg" alt="" />
+          <img src="/icon3.svg" alt="Ícone prática" />
           <div className={styles.text}>
-            <h4>Aprenda na Prática</h4>
-            <h5>Um desafio 100% prático com mentorias.</h5>
+            <h4>Ganhe Confiança</h4>
+            <h5>Crie projetos incríveis para seu portfólio.</h5>
           </div>
         </div>
-        <button>quero ser o rei do código</button>
+        <button>quero começar agora</button>
       </div>
     </div>
   );

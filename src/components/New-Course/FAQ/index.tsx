@@ -3,35 +3,39 @@ import styles from "./styles.module.scss";
 
 const faqs = [
   {
-    question: "Como posso me inscrever no hackathon?",
+    question: "Como faço para me inscrever no curso?",
     answer:
-      "Basta clicar no botão de inscrição na página inicial, preencher o formulário com seus dados e confirmar sua participação. Após isso, você terá acesso a todos os materiais e informações necessárias para começar.",
+      "Basta clicar no botão de inscrição na página inicial, preencher o formulário com seus dados e efetuar o pagamento. Após isso, você terá acesso imediato ao curso.",
   },
   {
-    question: "Posso participar sozinho ou preciso de um time?",
-    answer: "Você pode participar sozinho ou montar um time. A escolha é sua!",
-  },
-  {
-    question: "Quais são os requisitos para participar?",
+    question: "Preciso ter experiência para começar?",
     answer:
-      "Ter vontade de aprender e se desafiar. Não é necessário ter experiência prévia.",
+      "Não! O curso é ideal tanto para iniciantes quanto para quem já tem algum conhecimento e quer se aperfeiçoar.",
   },
   {
-    question: "Como funciona a avaliação dos projetos?",
+    question: "Quanto tempo tenho para concluir o curso?",
     answer:
-      "Os projetos serão avaliados por um painel de especialistas com base na originalidade, funcionalidade e apresentação.",
+      "O acesso ao curso é vitalício, então você pode aprender no seu próprio ritmo, sem pressa.",
   },
   {
-    question: "O que acontece após a inscrição?",
-    answer: "Você receberá acesso aos recursos e orientações para começar.",
+    question: "Receberei um certificado ao finalizar o curso?",
+    answer:
+      "Sim, todos os alunos que concluírem o curso recebem um certificado de conclusão.",
   },
   {
-    question: "Quando será o anúncio dos vencedores?",
-    answer: "Os vencedores serão anunciados no final do evento.",
+    question: "O que está incluído no curso?",
+    answer:
+      "Você terá acesso a aulas em vídeo, materiais de apoio, projetos práticos e suporte exclusivo para tirar suas dúvidas.",
   },
   {
-    question: "Quais são os prêmios?",
-    answer: "Os prêmios serão divulgados durante o evento. Fique atento!",
+    question: "Posso acessar o curso pelo celular?",
+    answer:
+      "Sim! O curso pode ser acessado de qualquer dispositivo com internet.",
+  },
+  {
+    question: "E se eu tiver dúvidas durante o curso?",
+    answer:
+      "Você terá acesso ao nosso suporte dedicado para ajudá-lo com qualquer dúvida ou dificuldade.",
   },
 ];
 
@@ -70,7 +74,7 @@ export default function FAQ() {
                   activeIndex === index ? styles.rotate : ""
                 }`}
               >
-                <img src="rightArrow.svg" alt="" />
+                <img src="/rightArrow.svg" alt="Abrir resposta" />
               </div>
             </div>
             <div

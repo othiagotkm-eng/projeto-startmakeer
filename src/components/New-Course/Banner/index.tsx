@@ -6,23 +6,25 @@ export default function Banner() {
       <img src="/rotate.svg" alt="" className={styles.rotate} />
       <div className={styles.leftside}>
         <h1>
-          Supere desafios.
+          Aprenda a criar sites incríveis.
           <span>
-            prove <br /> seu código
+            Domine HTML, CSS
+            <br /> e JS
           </span>
-          e conquiste <br />
-          seu prêmio.
+          e transforme sua <br />
+          ideia em realidade.
         </h1>
         <h5>
-          Participe do hackathon que vai testar suas habilidades e <br />
-          recompensar os melhores com prêmios exclusivos.
+          Por apenas R$47,90, aprenda passo a passo como construir um site do
+          zero, mesmo sem experiência prévia. Inscreva-se agora e comece a
+          programar hoje!
         </h5>
         <div className={styles.buttons}>
           <button className={styles.filled}>
-            quero ser o rei do código <img src="/rightArrow.svg" alt="" />
+            quero aprender agora <img src="/rightArrow.svg" alt="" />
           </button>
           <button>
-            CONFIRA O CONTEÚDO <img src="/rightArrow.svg" alt="" />
+            veja o que você vai aprender <img src="/rightArrow.svg" alt="" />
           </button>
         </div>
       </div>
