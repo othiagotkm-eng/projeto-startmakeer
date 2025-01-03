@@ -1,0 +1,118 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 80px;
+  align-items: center;
+  padding-block: 50px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 40px;
+  }
+
+  img {
+    &.rotate {
+      position: absolute;
+      top: -5%;
+      right: -1%;
+      z-index: 10;
+      width: 150px;
+      animation: rotate 15s linear infinite;
+      @media screen and (max-width: 768px) {
+        width: 100px;
+        top: 5%;
+        right: 5%;
+      }
+    }
+  }
+}
+.leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: Montserrat;
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+    span {
+      color: rgba(162, 158, 177, 0.8);
+      padding-inline: 5px;
+    }
+  }
+  h5 {
+    color: rgba(230, 228, 237, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filled {
+    text-transform: uppercase;
+    background-color: #4b3cff;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-family: Montserrat;
+    background-color: #4b3cff;
+    border: none;
+    cursor: pointer;
+  }
+  button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-family: Montserrat;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.rightside {
+  video {
+    max-width: 500px;
+    border-radius: 10px;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
