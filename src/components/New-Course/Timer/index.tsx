@@ -48,7 +48,14 @@ export default function BannerTimer({ targetDate }: TimerProps) {
           </strong>
         </span>
       </div>
-      <button className={styles.button}>Garanta sua vaga!</button>
+      <button
+        className={styles.button}
+        onClick={() =>
+          (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+        }
+      >
+        Garanta sua vaga!
+      </button>
     </div>
   );
 }

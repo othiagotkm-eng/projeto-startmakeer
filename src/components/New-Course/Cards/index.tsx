@@ -60,7 +60,13 @@ export default function Cards() {
           </div>
         </div>
       </div>
-      <button>quero aprender agora</button>
+      <button
+        onClick={() =>
+          (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+        }
+      >
+        quero aprender agora
+      </button>
     </div>
   );
 }

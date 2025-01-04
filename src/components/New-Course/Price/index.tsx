@@ -46,7 +46,13 @@ export default function Price() {
             <h4>Aprenda no seu ritmo</h4>
           </div>
         </div>
-        <button>quero começar agora</button>
+        <button
+          onClick={() =>
+            (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+          }
+        >
+          quero começar agora
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,12 @@
 import styles from "./styles.module.scss";
 
 export default function Banner() {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className={styles.content}>
       <img src="/rotate.svg" alt="" className={styles.rotate} />
@@ -20,10 +26,15 @@ export default function Banner() {
           programar hoje!
         </h5>
         <div className={styles.buttons}>
-          <button className={styles.filled}>
+          <button
+            className={styles.filled}
+            onClick={() =>
+              (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+            }
+          >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
           </button>
-          <button>
+          <button onClick={() => handleScroll("premiacao")}>
             veja o que você vai aprender <img src="/rightArrow.svg" alt="" />
           </button>
         </div>
@@ -35,6 +46,19 @@ export default function Banner() {
           height="315"
           allow="autoplay"
         ></iframe>
+        <div className={styles.buttons2}>
+          <button
+            className={styles.filled}
+            onClick={() =>
+              (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+            }
+          >
+            quero aprender agora <img src="/rightArrow.svg" alt="" />
+          </button>
+          <button onClick={() => handleScroll("premiacao")}>
+            veja o que você vai aprender <img src="/rightArrow.svg" alt="" />
+          </button>
+        </div>
       </div>
     </div>
   );

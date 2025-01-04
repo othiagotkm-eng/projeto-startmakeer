@@ -32,7 +32,13 @@ export default function Section2() {
             <h5>Crie projetos incríveis para seu portfólio.</h5>
           </div>
         </div>
-        <button>quero começar agora</button>
+        <button
+          onClick={() =>
+            (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+          }
+        >
+          quero começar agora
+        </button>
       </div>
     </div>
   );

@@ -58,5 +58,25 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      transition: transform 0.3s ease-in-out; /* Adiciona efeito ao ícone */
+    }
+
+    &:hover {
+      color: #fff; /* Muda a cor do texto */
+      border-color: #4b3cff; /* Mantém o contorno da mesma cor */
+      box-shadow: 0 4px 15px rgba(75, 60, 255, 0.5); /* Adiciona uma sombra ao hover */
+
+      img {
+        transform: rotate(15deg) scale(1.1); /* Gira e aumenta o ícone levemente */
+      }
+    }
+
+    &:active {
+      transform: scale(0.95); /* Leve redução ao clicar */
+      box-shadow: none; /* Remove a sombra */
+    }
   }
 }

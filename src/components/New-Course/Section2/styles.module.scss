@@ -7,13 +7,16 @@
   align-items: center;
   padding-block: 50px;
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
     padding-inline: 20px;
   }
 }
 
 .leftside {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
   img {
     width: 100%;
     border-radius: 5px;
@@ -57,9 +60,21 @@
     font-weight: 500;
     color: #fff;
     font-family: Montserrat;
-    background-color: #4b3cff;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #675aff;
+      color: #fff;
+      transform: translateY(-3px); /* Eleva levemente o botão */
+      box-shadow: 0 4px 15px rgba(75, 60, 255, 0.5); /* Efeito de brilho */
+    }
+
+    &:active {
+      transform: translateY(0); /* Remove a elevação ao clicar */
+      box-shadow: none;
+    }
   }
 }
 
