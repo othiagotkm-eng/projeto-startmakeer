@@ -14,8 +14,8 @@ export default function Header() {
         <div className={styles.leftside}>
           <img src="/new-logo.svg" alt="Logo" />
           <hr />
-          <p onClick={() => handleScroll("desafio")}>O desafio</p>
-          <p onClick={() => handleScroll("como-funciona")}>Como funciona</p>
+          <p onClick={() => handleScroll("desafio")}>Video</p>
+          <p onClick={() => handleScroll("como-funciona")}>Aprender</p>
           <p onClick={() => handleScroll("premiacao")}>Premiação</p>
           <p onClick={() => handleScroll("duvidas")}>Dúvidas</p>
         </div>

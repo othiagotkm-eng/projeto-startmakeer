@@ -51,7 +51,8 @@ export default function Document() {
                             t.src=v;s=b.getElementsByTagName(e)[0];
                             s.parentNode.insertBefore(t,s)}(window, document,'script',
                             'https://connect.facebook.net/en_US/fbevents.js');
-                            fbq('init', '1197469895000668');
+                            fbq('init', '1197469895000668'); 
+                            fbq('init', '330900406345654'); // Novo Pixel
                             fbq('track', 'PageView');
                         `,
           }}
@@ -63,6 +64,13 @@ export default function Document() {
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=1197469895000668&ev=PageView&noscript=1"
             alt="Meta Pixel"
+          />
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=330900406345654&ev=PageView&noscript=1"
+            alt="Novo Meta Pixel"
           />
         </noscript>
       </Head>

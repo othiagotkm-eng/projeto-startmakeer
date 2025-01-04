@@ -32,8 +32,8 @@
       animation: rotate 15s linear infinite;
       @media screen and (max-width: 768px) {
         width: 100px;
-        top: 5%;
-        right: 5%;
+        top: 51%;
+        right: -5%;
       }
     }
   }
@@ -109,7 +109,7 @@
 }
 
 .rightside {
-  video {
+  iframe {
     max-width: 500px;
     border-radius: 10px;
     @media screen and (max-width: 768px) {

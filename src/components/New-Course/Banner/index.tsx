@@ -29,7 +29,12 @@ export default function Banner() {
         </div>
       </div>
       <div className={styles.rightside}>
-        <video src="/cipa.mp4" poster="/thumbnail.svg" controls></video>
+        <iframe
+          src="https://drive.google.com/file/d/1ESYX2jkAxv9CVRpu7Kkr2M4QX95RignG/preview"
+          width="560"
+          height="315"
+          allow="autoplay"
+        ></iframe>
       </div>
     </div>
   );
