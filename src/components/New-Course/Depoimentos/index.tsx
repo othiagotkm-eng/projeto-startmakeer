@@ -4,22 +4,22 @@ import styles from "./styles.module.scss";
 export default function Depoimentos() {
   const testimonials = [
     {
-      text: "Mesmo com anos de experiência, o hackathon conseguiu me tirar do piloto automático. As tarefas eram desafiadoras e os feedbacks recebidos foram extremamente valiosos.",
-      name: "Ana S.",
-      role: "Front End Jr.",
+      text: "Comecei o curso sem nenhuma experiência em programação e agora consigo criar páginas completas do zero. HTML e CSS nunca pareceram tão fáceis!",
+      name: "Vitor F.",
+      role: "Designer Gráfico",
+      img: "/man2.svg",
+    },
+    {
+      text: "Achei incrível como o curso explicou JavaScript de forma tão prática. Agora entendo conceitos como manipulação do DOM e consigo criar interações incríveis!",
+      name: "Carlos T.",
+      role: "Desenvolvedor Júnior",
       img: "/man.svg",
     },
     {
-      text: "Participar desse evento foi a motivação que eu precisava. Mesmo como iniciante, consegui acompanhar, aprendi muito e ainda recebi dicas incríveis para minha carreira.",
-      name: "Lucas M.",
-      role: "Front End Sr.",
-      img: "/man.svg",
-    },
-    {
-      text: "Achei que seria só mais um desafio, mas foi muito mais que isso. Aprendi a lidar com pressão, a colaborar melhor em equipe e saí com um portfólio muito mais robusto.",
-      name: "Javier G.",
-      role: "Back End Sr.",
-      img: "/man.svg",
+      text: "O curso me ensinou a estruturar um site completo com HTML, estilizar com CSS e adicionar funcionalidades com JavaScript. Recomendo para todos que estão começando!",
+      name: "Heitor P.",
+      role: "Freelancer",
+      img: "/man3.svg",
     },
   ];
 

@@ -53,11 +53,11 @@ export default function Banner() {
           </div>
         ) : (
           <iframe
-            src="https://drive.google.com/file/d/1ESYX2jkAxv9CVRpu7Kkr2M4QX95RignG/preview"
             width="560"
             height="315"
-            allow="autoplay"
-            frameBorder="0"
+            src="https://www.youtube.com/embed/76SECjWzBDc?si=em9dGZaKK3rhhwi2"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         )}
 
