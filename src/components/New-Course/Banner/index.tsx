@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function Banner() {
@@ -6,6 +7,12 @@ export default function Banner() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handlePlayVideo = () => {
+    setShowVideo(true); // Substitui o thumbnail pelo iframe
   };
   return (
     <div className={styles.content}>
@@ -40,12 +47,20 @@ export default function Banner() {
         </div>
       </div>
       <div className={styles.rightside}>
-        <iframe
-          src="https://drive.google.com/file/d/1ESYX2jkAxv9CVRpu7Kkr2M4QX95RignG/preview"
-          width="560"
-          height="315"
-          allow="autoplay"
-        ></iframe>
+        {!showVideo ? (
+          <div className={styles.thumbnail} onClick={handlePlayVideo}>
+            <img src="/thumbnail.svg" alt="Thumbnail" />
+          </div>
+        ) : (
+          <iframe
+            src="https://drive.google.com/file/d/1ESYX2jkAxv9CVRpu7Kkr2M4QX95RignG/preview"
+            width="560"
+            height="315"
+            allow="autoplay"
+            frameBorder="0"
+          ></iframe>
+        )}
+
         <div className={styles.buttons2}>
           <button
             className={styles.filled}
