@@ -27,6 +27,12 @@ export default function Depoimentos() {
       role: "Estudante",
       img: "/davi.png",
     },
+    {
+      text: "Eu já tinha uma base em HTML e CSS, mas o curso me ajudou a dominar JavaScript de verdade. Hoje consigo criar sites dinâmicos e recebo mais pedidos de freelances.",
+      name: "André S.",
+      role: "Web Designer",
+      img: "/bilibio.png",
+    },
   ];
 
   return (
@@ -75,37 +81,43 @@ export default function Depoimentos() {
           ))}
         </div>
 
-        {/* Carrossel inferior (direita para esquerda) */}
+        {/* Carrossel inferior (direita para esquerda com ordem invertida) */}
         <div className={styles.middleBottom}>
-          {testimonials.map((testimonial, index) => (
-            <React.Fragment key={`bottom-${index}`}>
-              <div className={styles.card}>
-                <p>{testimonial.text}</p>
-                <div className={styles.profile}>
-                  <img src={testimonial.img} alt={testimonial.name} />
-                  <div className={styles.text}>
-                    <h4>{testimonial.name}</h4>
-                    <span>{testimonial.role}</span>
+          {testimonials
+            .slice() // Cria uma cópia do array original para evitar mutação
+            .reverse()
+            .map((testimonial, index) => (
+              <React.Fragment key={`bottom-${index}`}>
+                <div className={styles.card}>
+                  <p>{testimonial.text}</p>
+                  <div className={styles.profile}>
+                    <img src={testimonial.img} alt={testimonial.name} />
+                    <div className={styles.text}>
+                      <h4>{testimonial.name}</h4>
+                      <span>{testimonial.role}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </React.Fragment>
-          ))}
+              </React.Fragment>
+            ))}
           {/* Repetindo os elementos para continuidade */}
-          {testimonials.map((testimonial, index) => (
-            <React.Fragment key={`bottom-duplicate-${index}`}>
-              <div className={styles.card}>
-                <p>{testimonial.text}</p>
-                <div className={styles.profile}>
-                  <img src={testimonial.img} alt={testimonial.name} />
-                  <div className={styles.text}>
-                    <h4>{testimonial.name}</h4>
-                    <span>{testimonial.role}</span>
+          {testimonials
+            .slice()
+            .reverse()
+            .map((testimonial, index) => (
+              <React.Fragment key={`bottom-duplicate-${index}`}>
+                <div className={styles.card}>
+                  <p>{testimonial.text}</p>
+                  <div className={styles.profile}>
+                    <img src={testimonial.img} alt={testimonial.name} />
+                    <div className={styles.text}>
+                      <h4>{testimonial.name}</h4>
+                      <span>{testimonial.role}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </React.Fragment>
-          ))}
+              </React.Fragment>
+            ))}
         </div>
       </div>
     </div>
