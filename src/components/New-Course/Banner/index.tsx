@@ -47,19 +47,13 @@ export default function Banner() {
         </div>
       </div>
       <div className={styles.rightside}>
-        {!showVideo ? (
-          <div className={styles.thumbnail} onClick={handlePlayVideo}>
-            <img src="/thumbnail.svg" alt="Thumbnail" />
-          </div>
-        ) : (
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/76SECjWzBDc?si=em9dGZaKK3rhhwi2"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-        )}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/76SECjWzBDc?si=em9dGZaKK3rhhwi2"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
 
         <div className={styles.buttons2}>
           <button

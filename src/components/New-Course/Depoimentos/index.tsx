@@ -5,21 +5,27 @@ export default function Depoimentos() {
   const testimonials = [
     {
       text: "Comecei o curso sem nenhuma experiência em programação e agora consigo criar páginas completas do zero. HTML e CSS nunca pareceram tão fáceis!",
-      name: "Vitor F.",
+      name: "Gustavo P.",
       role: "Designer Gráfico",
-      img: "/man2.svg",
+      img: "/pacoca.png",
     },
     {
       text: "Achei incrível como o curso explicou JavaScript de forma tão prática. Agora entendo conceitos como manipulação do DOM e consigo criar interações incríveis!",
       name: "Carlos T.",
       role: "Desenvolvedor Júnior",
-      img: "/man.svg",
+      img: "/baiano.png",
     },
     {
       text: "O curso me ensinou a estruturar um site completo com HTML, estilizar com CSS e adicionar funcionalidades com JavaScript. Recomendo para todos que estão começando!",
       name: "Heitor P.",
       role: "Freelancer",
-      img: "/man3.svg",
+      img: "/joel.png",
+    },
+    {
+      text: "Sempre quis aprender programação, mas achava que era muito complicado. O curso desmistificou tudo e agora consigo criar meus próprios projetos com confiança!",
+      name: "Lucas L.",
+      role: "Estudante",
+      img: "/davi.png",
     },
   ];
 
