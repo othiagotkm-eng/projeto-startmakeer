@@ -1,21 +1,28 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-interface TimerProps {
-  targetDate: string;
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
 }
 
-export default function BannerTimer({ targetDate }: TimerProps) {
-  const [timeLeft, setTimeLeft] = useState({
+interface BannerTimerProps {
+  targetDate: string; // Data de término como string
+}
+
+export default function BannerTimer({ targetDate }: BannerTimerProps) {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
     minutes: 0,
   });
 
   useEffect(() => {
+    const countdownDate = new Date(targetDate).getTime();
+
     const interval = setInterval(() => {
       const now = new Date().getTime();
-      const countdownDate = new Date(targetDate).getTime();
       const distance = countdownDate - now;
 
       if (distance > 0) {
@@ -42,7 +49,7 @@ export default function BannerTimer({ targetDate }: TimerProps) {
           • De: <del>R$ 197,00</del> Por: <strong>R$ 79,00</strong>
         </span>
         <span>
-          • Encerramento:
+          • Encerramento:{" "}
           <strong>
             {timeLeft.days} D {timeLeft.hours} H {timeLeft.minutes} M
           </strong>
