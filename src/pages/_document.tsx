@@ -51,8 +51,8 @@ export default function Document() {
                             t.src=v;s=b.getElementsByTagName(e)[0];
                             s.parentNode.insertBefore(t,s)}(window, document,'script',
                             'https://connect.facebook.net/en_US/fbevents.js');
-                            fbq('init', '1197469895000668'); 
-                            fbq('init', '330900406345654'); // Novo Pixel
+    
+                            fbq('init', '330900406345654'); 
                             fbq('track', 'PageView');
                         `,
           }}
