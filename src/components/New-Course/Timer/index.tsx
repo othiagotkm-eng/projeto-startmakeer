@@ -1,61 +1,62 @@
-import { useState, useEffect } from "react";
-import styles from "./styles.module.scss";
+import { useEffect, useState } from 'react';
+import styles from './styles.module.scss';
 
-interface TimerProps {
-  targetDate: string;
-}
+export default function BannerTimer() {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+    });
 
-export default function BannerTimer({ targetDate }: TimerProps) {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-  });
+    useEffect(() => {
+        // Definindo a data de término para 30 de janeiro de 2025, às 23h59m59s
+        const countdownDate = new Date('January 30, 2025 23:59:59').getTime();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const countdownDate = new Date(targetDate).getTime();
-      const distance = countdownDate - now;
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
 
-      if (distance > 0) {
-        setTimeLeft({
-          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          ),
-          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        });
-      } else {
-        clearInterval(interval);
-      }
-    }, 1000);
+            if (distance > 0) {
+                setTimeLeft({
+                    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor(
+                        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                    ),
+                    minutes: Math.floor(
+                        (distance % (1000 * 60 * 60)) / (1000 * 60)
+                    ),
+                });
+            } else {
+                clearInterval(interval);
+            }
+        }, 1000);
 
-    return () => clearInterval(interval);
-  }, [targetDate]);
+        return () => clearInterval(interval);
+    }, []);
 
-  return (
-    <div className={styles.banner}>
-      <div className={styles.info}>
-        <span>Pré-venda RDC</span>
-        <span>
-          • De: <del>R$ 197,00</del> Por: <strong>R$ 97,00</strong>
-        </span>
-        <span>
-          • Encerramento:{" "}
-          <strong>
-            {timeLeft.days} D {timeLeft.hours} H {timeLeft.minutes} M
-          </strong>
-        </span>
-      </div>
-      <button
-        className={styles.button}
-        onClick={() =>
-          (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
-        }
-      >
-        Garanta sua vaga!
-      </button>
-    </div>
-  );
+    return (
+        <div className={styles.banner}>
+            <div className={styles.info}>
+                <span>Pré-venda RDC</span>
+                <span>
+                    • De: <del>R$ 197,00</del> Por: <strong>R$ 79,00</strong>
+                </span>
+                <span>
+                    • Encerramento:{' '}
+                    <strong>
+                        {timeLeft.days} D {timeLeft.hours} H {timeLeft.minutes}{' '}
+                        M
+                    </strong>
+                </span>
+            </div>
+            <button
+                className={styles.button}
+                onClick={() =>
+                    (window.location.href = 'https://pay.kiwify.com.br/dI9thX7')
+                }
+            >
+                Garanta sua vaga!
+            </button>
+        </div>
+    );
 }
