@@ -10,6 +10,7 @@ import Price from "@/components/New-Course/Price";
 import FAQ from "@/components/New-Course/FAQ";
 import Footer from "@/components/New-Course/Footer";
 import BannerTimer from "@/components/New-Course/Timer";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -18,10 +19,11 @@ export default function Home() {
     }
   }, []);
 
-  const pageTitle = "curso";
-
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Rei Do Código</title>
+      </Head>
       <Header />
       <div id="inscricao">
         <BannerTimer targetDate="2025-01-10T23:59:59" />
