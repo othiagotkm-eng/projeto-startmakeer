@@ -50,21 +50,7 @@ const Course = ({ urlParams }: CourseProps) => {
                 );
         }
 
-        if (urlParams.includes('instagram')) {
-            router.push('/instagram/organico/curso');
-        } else if (urlParams.includes('instagram-ads')) {
-            router.push('/instagram/ads/curso');
-        } else if (urlParams.includes('tiktok')) {
-            router.push('/tiktok/organico/curso');
-        } else if (urlParams.includes('tiktok-ads')) {
-            router.push('/tiktok/ads/curso');
-        } else if (urlParams.includes('facebook-organico')) {
-            router.push('/facebook/organico/curso');
-        } else if (urlParams.includes('facebook-ads')) {
-            router.push('/facebook/ads/curso');
-        } else {
-            router.push('/curso');
-        }
+        router.push('/new-course');
     };
 
     return (
@@ -88,7 +74,7 @@ const Course = ({ urlParams }: CourseProps) => {
                         <img src="/newicon.png" />
                     </div>
                     <div className={styles.text}>
-                        <h2>Aprenda por R$197,00</h2>
+                        <h2>Aprenda por R$79,00</h2>
                         <h5>
                             Nesse curso você vai aprender tudo que você precisa
                             para sair do zero, e aprender programação.
