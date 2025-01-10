@@ -5,7 +5,6 @@ import "animate.css/animate.compat.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import Script from "next/script";
 
 interface UserData {
   email: string;
@@ -79,20 +78,6 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <title>Do Zero aos Sites</title>
       </Head>
-      <Script
-        id="contentsquare-sdk"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            import { injectContentsquareScript } from '@contentsquare/tag-sdk';
-            injectContentsquareScript({
-              siteId: "5262179",
-              async: true,
-              defer: false,
-            });
-          `,
-        }}
-      />
       <SmoothScroll />
       <GoogleAnalytics gaId="G-32JCH9GGY4" />
       <Component {...pageProps} />
