@@ -78,11 +78,12 @@ export default function App({ Component, pageProps }: AppProps) {
           content="https://firebasestorage.googleapis.com/v0/b/nextgain-37481.appspot.com/o/Screenshot%202024-04-01%20at%2022.58.47.png?alt=media&token=c87429da-d568-4acc-9b39-e4cb579bb9ac"
         />
         <title>Do Zero aos Sites</title>
-        <Script
-          id="HotJarAnalytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `  (function (c, s, q, u, a, r, e) {
+      </Head>
+      <Script
+        id="HotJarAnalytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `  (function (c, s, q, u, a, r, e) {
         c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
         c._hjSettings = { hjid: a };
         r = s.getElementsByTagName('head')[0];
@@ -91,9 +92,8 @@ export default function App({ Component, pageProps }: AppProps) {
         e.src = q + c._hjSettings.hjid + u;
         r.appendChild(e);
     })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5262179);`,
-          }}
-        />
-      </Head>
+        }}
+      />
       <SmoothScroll />
       <GoogleAnalytics gaId="G-32JCH9GGY4" />
       <Component {...pageProps} />
