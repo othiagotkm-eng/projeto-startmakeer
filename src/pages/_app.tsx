@@ -64,11 +64,22 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Descubra o mundo da tecnologia e desenvolvimento web com o Rei dos Sites. Aprenda a criar sites do zero e transforme suas ideias em realidade."
+          content="Do Zero aos Sites - Aprenda a criar sites profissionais do zero"
         />
+        <title>Do Zero aos Sites</title>
+        <link rel="preload" href="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/player.js" as="script" />
+        <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script" />
+        <link rel="preload" href="https://images.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/thumbnail.jpg" as="image" />
+        <link rel="preload" href="https://cdn.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/6784e6ff209b6966c0f1543b/main.m3u8" as="fetch" />
+        <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+        <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+        <link rel="dns-prefetch" href="https://images.converteai.net" />
+        <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta
           name="og:description"
           content="Descubra o mundo da tecnologia e desenvolvimento web com o Rei dos Sites. Aprenda a criar sites do zero e transforme suas ideias em realidade."
@@ -77,7 +88,6 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:image"
           content="https://firebasestorage.googleapis.com/v0/b/nextgain-37481.appspot.com/o/Screenshot%202024-04-01%20at%2022.58.47.png?alt=media&token=c87429da-d568-4acc-9b39-e4cb579bb9ac"
         />
-        <title>Do Zero aos Sites</title>
       </Head>
       <Script
         id="HotJarAnalytics"
