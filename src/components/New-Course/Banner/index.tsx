@@ -62,18 +62,18 @@ export default function Banner() {
       </div>
       <div className={styles.rightside}>
         <div
-          id="ifr_6784e725ad735d16cd74217e_wrapper"
+          id="ifr_6784fa77fffafbc506ebf9ac_wrapper"
           style={{ margin: "0 auto", width: "100%" }}
         >
           <div
             style={{ padding: "56.25% 0 0 0", position: "relative" }}
-            id="ifr_6784e725ad735d16cd74217e_aspect"
+            id="ifr_6784fa77fffafbc506ebf9ac_aspect"
           >
             <iframe
               frameBorder="0"
               allowFullScreen
-              src="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/embed.html"
-              id="ifr_6784e725ad735d16cd74217e"
+              src="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784fa77fffafbc506ebf9ac/embed.html"
+              id="ifr_6784fa77fffafbc506ebf9ac"
               style={{
                 position: "absolute",
                 top: 0,
