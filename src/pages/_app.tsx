@@ -68,9 +68,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Do Zero aos Sites - Aprenda a criar sites profissionais do zero"
+          content="O Rei dos Sites - Aprenda a viver de sites"
         />
-        <title>Do Zero aos Sites</title>
+        <title>O Rei dos Sites</title>
         <link
           rel="preload"
           href="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/player.js"
