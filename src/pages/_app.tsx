@@ -102,7 +102,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/dei-de-presente-software.appspot.com/o/banner.jpg?alt=media&token=10ea8a53-ee38-419f-90eb-f9ac3fe8db79"
+          content="https://firebasestorage.googleapis.com/v0/b/dei-de-presente-software.appspot.com/o/BannerMobile.jpg?alt=media&token=b4d01a47-e3af-4511-a853-9a356776e41b"
         />
       </Head>
       <Script
