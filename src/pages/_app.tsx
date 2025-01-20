@@ -71,10 +71,26 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Do Zero aos Sites - Aprenda a criar sites profissionais do zero"
         />
         <title>Do Zero aos Sites</title>
-        <link rel="preload" href="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/player.js" as="script" />
-        <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script" />
-        <link rel="preload" href="https://images.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/thumbnail.jpg" as="image" />
-        <link rel="preload" href="https://cdn.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/6784e6ff209b6966c0f1543b/main.m3u8" as="fetch" />
+        <link
+          rel="preload"
+          href="https://scripts.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/player.js"
+          as="script"
+        />
+        <link
+          rel="preload"
+          href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js"
+          as="script"
+        />
+        <link
+          rel="preload"
+          href="https://images.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/players/6784e725ad735d16cd74217e/thumbnail.jpg"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://cdn.converteai.net/4b7dcf06-4129-47b4-a172-e3169474979f/6784e6ff209b6966c0f1543b/main.m3u8"
+          as="fetch"
+        />
         <link rel="dns-prefetch" href="https://cdn.converteai.net" />
         <link rel="dns-prefetch" href="https://scripts.converteai.net" />
         <link rel="dns-prefetch" href="https://images.converteai.net" />
@@ -86,7 +102,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/nextgain-37481.appspot.com/o/Screenshot%202024-04-01%20at%2022.58.47.png?alt=media&token=c87429da-d568-4acc-9b39-e4cb579bb9ac"
+          content="https://firebasestorage.googleapis.com/v0/b/dei-de-presente-software.appspot.com/o/banner.jpg?alt=media&token=10ea8a53-ee38-419f-90eb-f9ac3fe8db79"
         />
       </Head>
       <Script
