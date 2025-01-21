@@ -35,8 +35,8 @@ export default function Banner() {
         <h1>
           Aprenda a criar sites incríveis.
           <span>
-            Domine HTML, CSS
-            <br /> e JS
+            Domine HTML, CSS, JS
+            <br /> e Python
           </span>
           e transforme sua <br />
           ideia em realidade.
