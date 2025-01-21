@@ -40,7 +40,7 @@ export default function Header() {
         <div className={styles.rightside}>
           <button
             onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
             }
           >
             <img src="/crown.svg" alt="" />

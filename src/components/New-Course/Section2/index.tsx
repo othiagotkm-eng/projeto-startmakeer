@@ -34,7 +34,7 @@ export default function Section2() {
         </div>
         <button
           onClick={() =>
-            (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+            (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
           }
         >
           quero começar agora

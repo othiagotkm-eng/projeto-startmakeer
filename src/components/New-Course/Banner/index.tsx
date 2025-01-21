@@ -50,7 +50,7 @@ export default function Banner() {
           <button
             className={styles.filled}
             onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
@@ -90,7 +90,7 @@ export default function Banner() {
           <button
             className={styles.filled}
             onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/dI9thX7")
+              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
