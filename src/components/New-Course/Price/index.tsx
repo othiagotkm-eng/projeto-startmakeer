@@ -11,8 +11,8 @@ export default function Price() {
           <h5>
             Pré-venda: <span>de R$ 197,00</span> por
           </h5>
-          <h2>12 x de R$ 7,93</h2>
-          <h5>ou R$ 79,00 à vista</h5>
+          <h2>12 x de R$ 9,74</h2>
+          <h5>ou R$ 97,00 à vista</h5>
         </div>
         <hr />
         <div className={styles.middle}>

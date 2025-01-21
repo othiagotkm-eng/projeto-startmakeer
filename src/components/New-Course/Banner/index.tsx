@@ -42,7 +42,7 @@ export default function Banner() {
           ideia em realidade.
         </h1>
         <h5>
-          Por apenas R$79,00, aprenda passo a passo como construir um site do
+          Por apenas R$97,00, aprenda passo a passo como construir um site do
           zero, mesmo sem experiência prévia. Inscreva-se agora e comece a
           programar hoje!
         </h5>

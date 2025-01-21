@@ -46,7 +46,7 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
       <div className={styles.info}>
         <span>Pré-venda RDC</span>
         <span>
-          • De: <del>R$ 197,00</del> Por: <strong>R$ 79,00</strong>
+          • De: <del>R$ 197,00</del> Por: <strong>R$ 97,00</strong>
         </span>
         <span>
           • Encerramento:{" "}
