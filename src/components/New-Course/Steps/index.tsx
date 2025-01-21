@@ -8,11 +8,13 @@ export default function Steps() {
         <p>ETAPAS</p>
         <h2>Do básico ao avançado, </h2>
         <h5>
-          Cada etapa foi planejada para te guiar no aprendizado de HTML, CSS e
-          JavaScript <br /> e transformar suas ideias em realidade na web.
+          Cada etapa foi planejada para te guiar no aprendizado de HTML, Python
+          e Inteligência Artificial, <br /> e transformar suas ideias em
+          realidade na web e na tecnologia.
         </h5>
       </div>
       <div className={styles.middle}>
+        {/* HTML */}
         <div className={styles.card}>
           <div className={styles.cardTop}>
             <img src="/binoculo.svg" alt="" />
@@ -31,67 +33,55 @@ export default function Steps() {
             <img src="/checkP.svg" alt="" />
             <h5>Descubra como criar links e imagens.</h5>
           </div>
-          <div className={styles.row}>
-            <img src="/checkP.svg" alt="" />
-            <h5>Crie formulários para capturar dados.</h5>
-          </div>
-          <div className={styles.row}>
-            <img src="/checkP.svg" alt="" />
-            <h5>Entenda a semântica no HTML.</h5>
-          </div>
         </div>
+
+        {/* Python */}
         <div className={styles.card}>
           <div className={styles.cardTop}>
             <img src="/page.svg" alt="" />
-            <h3>Estilização com CSS</h3>
+            <h3>Programação com Python</h3>
           </div>
           <hr />
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Personalize cores e fontes.</h5>
+            <h5>Compreenda conceitos de lógica e algoritmos.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Crie layouts flexíveis com Flexbox.</h5>
+            <h5>Trabalhe com automação de tarefas.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Utilize CSS Grid para organizar conteúdo.</h5>
+            <h5>Desenvolva aplicações simples.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Adicione transições e animações.</h5>
-          </div>
-          <div className={styles.row}>
-            <img src="/checkP.svg" alt="" />
-            <h5>Garanta a responsividade do site.</h5>
+            <h5>Manipule e analise dados.</h5>
           </div>
         </div>
+
+        {/* Inteligência Artificial */}
         <div className={styles.card}>
           <div className={styles.cardTop}>
             <img src="/list.svg" alt="" />
-            <h3>Interatividade com JavaScript</h3>
+            <h3>Introdução à Inteligência Artificial</h3>
           </div>
           <hr />
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Entenda variáveis e funções.</h5>
+            <h5>Entenda os fundamentos do Machine Learning.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Manipule elementos com o DOM.</h5>
+            <h5>Aprenda a treinar modelos simples.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Adicione eventos como cliques e teclas.</h5>
+            <h5>Explore algoritmos de classificação e regressão.</h5>
           </div>
           <div className={styles.row}>
             <img src="/checkP.svg" alt="" />
-            <h5>Trabalhe com APIs para dados dinâmicos.</h5>
-          </div>
-          <div className={styles.row}>
-            <img src="/checkP.svg" alt="" />
-            <h5>Crie validações simples de formulários.</h5>
+            <h5>Implemente redes neurais básicas.</h5>
           </div>
         </div>
       </div>
