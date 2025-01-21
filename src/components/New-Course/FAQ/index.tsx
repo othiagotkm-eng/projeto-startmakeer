@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Quanto tempo tenho para concluir o curso?",
     answer:
-      "O acesso ao curso é vitalício, então você pode aprender no seu próprio ritmo, sem pressa.",
+      "O acesso ao curso é anual, então você pode aprender no seu próprio ritmo, sem pressa.",
   },
   {
     question: "Receberei um certificado ao finalizar o curso?",
