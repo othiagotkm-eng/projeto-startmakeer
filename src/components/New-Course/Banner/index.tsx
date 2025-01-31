@@ -50,7 +50,8 @@ export default function Banner() {
           <button
             className={styles.filled}
             onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
+              (window.location.href =
+                "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
@@ -90,7 +91,8 @@ export default function Banner() {
           <button
             className={styles.filled}
             onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
+              (window.location.href =
+                "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />

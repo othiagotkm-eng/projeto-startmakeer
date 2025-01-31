@@ -79,7 +79,8 @@ export default function Cards() {
       </div>
       <button
         onClick={() =>
-          (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
+          (window.location.href =
+            "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
         }
       >
         quero aprender agora
