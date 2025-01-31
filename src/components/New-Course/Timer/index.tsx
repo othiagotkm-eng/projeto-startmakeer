@@ -46,7 +46,7 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
       <div className={styles.info}>
         <span>Pré-venda RDC</span>
         <span>
-          • De: <del>R$ 197,00</del> Por: <strong>R$ 97,00</strong>
+          • De: <del>R$ 147,00</del> Por: <strong>R$ 97,00</strong>
         </span>
         <span>
           • Encerramento:{" "}
@@ -59,7 +59,7 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
         className={styles.button}
         onClick={() =>
           (window.location.href =
-            "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
+            "https://pay.kirvano.com/fcd272ea-6ed6-46f1-9cdf-a450c60c463e")
         }
       >
         Garanta sua vaga!

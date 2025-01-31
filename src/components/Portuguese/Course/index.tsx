@@ -41,7 +41,7 @@ const Course = ({ urlParams }: CourseProps) => {
           const ReactPixel = module.default;
           ReactPixel.track("ViewContent", {
             content_name: "Curso",
-            value: 17.0,
+            value: 97.0,
             currency: "BRL",
           });
         })

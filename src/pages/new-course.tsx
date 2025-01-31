@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <Header />
       <div id="inscricao">
-        <BannerTimer targetDate="2025-01-30T23:59:59" />
+        <BannerTimer targetDate="2025-01-31T23:59:59" />
       </div>
       <div id="desafio">
         <Banner />

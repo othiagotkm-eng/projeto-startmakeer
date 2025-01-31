@@ -51,7 +51,7 @@ export default function Banner() {
             className={styles.filled}
             onClick={() =>
               (window.location.href =
-                "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
+                "https://pay.kirvano.com/fcd272ea-6ed6-46f1-9cdf-a450c60c463e")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
@@ -92,7 +92,7 @@ export default function Banner() {
             className={styles.filled}
             onClick={() =>
               (window.location.href =
-                "https://pay.kirvano.com/3abfe412-6a7e-4d26-b293-9d13df21a886")
+                "https://pay.kirvano.com/fcd272ea-6ed6-46f1-9cdf-a450c60c463e")
             }
           >
             quero aprender agora <img src="/rightArrow.svg" alt="" />
