@@ -51,7 +51,7 @@ export default function Home() {
         <FAQ />
       </div>
       <Link
-        href="https://wa.me/5579999847482"
+        href="https://wa.me/5541999179672"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsappIcon}
