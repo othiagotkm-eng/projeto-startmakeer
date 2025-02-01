@@ -58,8 +58,7 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
       <button
         className={styles.button}
         onClick={() =>
-          (window.location.href =
-            "https://pay.kirvano.com/fcd272ea-6ed6-46f1-9cdf-a450c60c463e")
+          (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
         }
       >
         Garanta sua vaga!
