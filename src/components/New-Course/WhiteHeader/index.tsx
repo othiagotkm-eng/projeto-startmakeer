@@ -28,7 +28,7 @@ export default function WhiteHeader() {
     <div className={`${styles.container} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.content}>
         <div className={styles.leftside}>
-          <img src="/new-logo.svg" alt="Logo" />
+          <img src="/logoWhite.svg" alt="Logo" />
           <hr />
           <p onClick={() => handleScrollToSection("desafio")}>Video</p>
           <p onClick={() => handleScrollToSection("premiacao")}>Aprender</p>

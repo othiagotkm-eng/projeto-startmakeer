@@ -5,7 +5,7 @@ export default function WhitePrice() {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.logo}>
-          <img src="/new-logo.svg" alt="Logo do Curso" />
+          <img src="/logoWhite.svg" alt="Logo do Curso" />
         </div>
         <div className={styles.price}>
           <h5>

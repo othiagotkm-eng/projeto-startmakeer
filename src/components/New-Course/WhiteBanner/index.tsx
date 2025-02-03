@@ -25,7 +25,7 @@ export default function WhiteBanner() {
 
   return (
     <div className={styles.content}>
-      <img src="/rotate.svg" alt="" className={styles.rotate} />
+      <img src="/rodaWhite.svg" alt="" className={styles.rotate} />
       <style jsx global>{`
         .elementor-element:has(#ifr_6784e725ad735d16cd74217e_wrapper) {
           width: 100%;
