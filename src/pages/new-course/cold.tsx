@@ -10,7 +10,7 @@ import Steps from "@/components/New-Course/Steps";
 import BannerTimer from "@/components/New-Course/Timer";
 import Head from "next/head";
 import { useEffect } from "react";
-import styles from "../styles/newCourse.module.scss";
+import styles from "../../styles/newCourse.module.scss";
 import Link from "next/link";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <Header />
       <div id="inscricao">
-        <BannerTimer targetDate="2025-02-15T23:59:59" />
+        <BannerTimer targetDate="2025-03-31T23:59:59" />
       </div>
       <div id="desafio">
         <Banner />
