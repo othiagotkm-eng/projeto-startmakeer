@@ -10,10 +10,19 @@ import Steps from "@/components/New-Course/Steps";
 import BannerTimer from "@/components/New-Course/Timer";
 import Head from "next/head";
 import { useEffect } from "react";
-import styles from "../styles/newCourse.module.scss";
+import styles from "../styles/whiteCourse.module.scss";
 import Link from "next/link";
+import WhiteTimer from "@/components/New-Course/WhiteTimer";
+import WhiteHeader from "@/components/New-Course/WhiteHeader";
+import WhiteBanner from "@/components/New-Course/WhiteBanner";
+import WhiteSection2 from "@/components/New-Course/WhiteSection2";
+import WhiteCards from "@/components/New-Course/WhiteCards";
+import WhiteDepoimentos from "@/components/New-Course/WhiteDepoimentos";
+import WhiteSteps from "@/components/New-Course/WhiteSteps";
+import WhitePrice from "@/components/New-Course/WhitePrice";
+import WhiteFAQ from "@/components/New-Course/WhiteFAQ";
 
-export default function Home() {
+export default function WhiteCourse() {
   useEffect(() => {
     if (typeof window !== "undefined" && window.ttq) {
       window.ttq.track("ViewContent");
@@ -25,30 +34,30 @@ export default function Home() {
       <Head>
         <title>Rei Do Código</title>
       </Head>
-      <Header />
+      <WhiteHeader />
       <div id="inscricao">
-        <BannerTimer targetDate="2025-02-15T23:59:59" />
+        <WhiteTimer targetDate="2025-02-15T23:59:59" />
       </div>
       <div id="desafio">
-        <Banner />
+        <WhiteBanner />
       </div>
       <div id="como-funciona">
-        <Section2 />
+        <WhiteSection2 />
       </div>
       <div id="premiacao">
-        <Cards />
+        <WhiteCards />
       </div>
       <div id="depoimentos">
-        <Depoimentos />
+        <WhiteDepoimentos />
       </div>
       <div id="steps">
-        <Steps />
+        <WhiteSteps />
       </div>
       <div id="price">
-        <Price />
+        <WhitePrice />
       </div>
       <div id="duvidas">
-        <FAQ />
+        <WhiteFAQ />
       </div>
       <Link
         href="https://wa.me/5541999179672"
