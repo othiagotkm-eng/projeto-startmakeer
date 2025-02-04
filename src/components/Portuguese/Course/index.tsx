@@ -50,7 +50,7 @@ const Course = ({ urlParams }: CourseProps) => {
         );
     }
 
-    router.push("/new-course");
+    router.push("/white-course");
   };
 
   return (
