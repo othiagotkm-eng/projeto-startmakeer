@@ -6,6 +6,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import { QueryParamsProvider } from "@/context/QueryContext";
 
 interface UserData {
   email: string;
@@ -122,7 +123,9 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <SmoothScroll />
       <GoogleAnalytics gaId="G-32JCH9GGY4" />
-      <Component {...pageProps} />
+      <QueryParamsProvider>
+        <Component {...pageProps} />
+      </QueryParamsProvider>
     </>
   );
 }

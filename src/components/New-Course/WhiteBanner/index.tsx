@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
+import { useQueryParams } from "@/context/QueryContext";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 export default function WhiteBanner() {
   const handleScroll = (id: string) => {
@@ -22,6 +24,12 @@ export default function WhiteBanner() {
     script.setAttribute("data-id", "6784e725ad735d16cd74217e");
     document.head.appendChild(script);
   }, []);
+
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
 
   return (
     <div className={styles.content}>
@@ -87,12 +95,7 @@ export default function WhiteBanner() {
         </div>
 
         <div className={styles.buttons2}>
-          <button
-            className={styles.filled}
-            onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-            }
-          >
+          <button className={styles.filled} onClick={handleRedirect}>
             quero aprender agora <img src="/rightArrow.svg" alt="" />
           </button>
           <button onClick={() => handleScroll("premiacao")}>

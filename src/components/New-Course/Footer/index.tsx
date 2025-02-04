@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import styles from "./styles.module.scss";
 
 export default function Footer() {

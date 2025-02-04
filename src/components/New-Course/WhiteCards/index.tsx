@@ -1,6 +1,14 @@
+import { useQueryParams } from "@/context/QueryContext";
 import styles from "./styles.module.scss";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 export default function WhiteCards() {
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
+
   return (
     <div className={styles.content}>
       <div className={styles.top}>
@@ -77,13 +85,7 @@ export default function WhiteCards() {
           </div>
         </div>
       </div>
-      <button
-        onClick={() =>
-          (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-        }
-      >
-        quero aprender agora
-      </button>
+      <button onClick={handleRedirect}>quero aprender agora</button>
     </div>
   );
 }

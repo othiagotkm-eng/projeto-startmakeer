@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
+import { useQueryParams } from "@/context/QueryContext";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 export default function WhiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,11 +46,7 @@ export default function WhiteHeader() {
           <p onClick={() => handleScrollToSection("duvidas")}>Dúvidas</p>
         </div>
         <div className={styles.rightside}>
-          <button
-            onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-            }
-          >
+          <button onClick={handleRedirect}>
             <img src="/crown.svg" alt="" />
             Inscreva-se
           </button>

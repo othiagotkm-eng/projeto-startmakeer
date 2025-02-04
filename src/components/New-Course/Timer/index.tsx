@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
+import { useQueryParams } from "@/context/QueryContext";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 interface TimeLeft {
   days: number;
@@ -17,6 +19,12 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
     hours: 0,
     minutes: 0,
   });
+
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
 
   useEffect(() => {
     const countdownDate = new Date(targetDate).getTime();
@@ -55,12 +63,7 @@ export default function BannerTimer({ targetDate }: BannerTimerProps) {
           </strong>
         </span>
       </div>
-      <button
-        className={styles.button}
-        onClick={() =>
-          (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-        }
-      >
+      <button className={styles.button} onClick={handleRedirect}>
         Garanta sua vaga!
       </button>
     </div>

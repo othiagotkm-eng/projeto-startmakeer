@@ -1,6 +1,14 @@
+import { useQueryParams } from "@/context/QueryContext";
 import styles from "./styles.module.scss";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 export default function WhitePrice() {
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -45,13 +53,7 @@ export default function WhitePrice() {
             <h4>Aprenda no seu ritmo</h4>
           </div>
         </div>
-        <button
-          onClick={() =>
-            (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-          }
-        >
-          quero começar agora
-        </button>
+        <button onClick={handleRedirect}>quero começar agora</button>
       </div>
     </div>
   );

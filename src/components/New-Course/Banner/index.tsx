@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
+import { useQueryParams } from "@/context/QueryContext";
+import { getKiwifyUrl } from "@/utils/urlUtils";
 
 export default function Banner() {
+  const { params } = useQueryParams();
+
+  const handleRedirect = () => {
+    window.location.href = getKiwifyUrl(params) || "";
+  };
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -87,12 +94,7 @@ export default function Banner() {
         </div>
 
         <div className={styles.buttons2}>
-          <button
-            className={styles.filled}
-            onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-            }
-          >
+          <button className={styles.filled} onClick={handleRedirect}>
             quero aprender agora <img src="/rightArrow.svg" alt="" />
           </button>
           <button onClick={() => handleScroll("premiacao")}>
