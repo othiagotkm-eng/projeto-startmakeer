@@ -54,12 +54,7 @@ export default function Banner() {
           programar hoje!
         </h5>
         <div className={styles.buttons}>
-          <button
-            className={styles.filled}
-            onClick={() =>
-              (window.location.href = "https://pay.kiwify.com.br/0Ok5Oz9")
-            }
-          >
+          <button className={styles.filled} onClick={handleRedirect}>
             quero aprender agora <img src="/rightArrow.svg" alt="" />
           </button>
           <button onClick={() => handleScroll("premiacao")}>
