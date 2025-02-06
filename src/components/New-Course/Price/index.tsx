@@ -25,7 +25,7 @@ export default function Price() {
         <div className={styles.middle}>
           <div className={styles.row}>
             <img src="/checkN.svg" alt="Check" />
-            <h4>Acesso anual ao curso</h4>
+            <h4>Acesso vialíco ao curso</h4>
           </div>
           <div className={styles.row}>
             <img src="/checkN.svg" alt="Check" />
