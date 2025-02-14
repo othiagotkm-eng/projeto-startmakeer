@@ -121,6 +121,12 @@ export default function App({ Component, pageProps }: AppProps) {
     })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5262179);`,
         }}
       />
+      <Script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-subids
+        async
+        defer
+      />
       <SmoothScroll />
       <GoogleAnalytics gaId="G-32JCH9GGY4" />
       <QueryParamsProvider>
