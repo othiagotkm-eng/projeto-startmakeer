@@ -21,6 +21,12 @@ interface UserData {
   country: string;
 }
 
+declare global {
+  interface Window {
+    ttq: any;
+  }
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   const [userData, setUserData] = useState<UserData | null>(null);
 
@@ -59,6 +65,53 @@ export default function App({ Component, pageProps }: AppProps) {
         .catch((err) =>
           console.error("Failed to load React Facebook Pixel", err)
         );
+    }
+
+    if (typeof window !== "undefined") {
+      const loadTikTokPixel = () => {
+        const w = window;
+        const d = document;
+        const t = "ttq";
+        w.TiktokAnalyticsObject = t;
+        const ttq = (w[t] = w[t] || []);
+        ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+          "holdConsent",
+          "revokeConsent",
+          "grantConsent",
+        ];
+        ttq.setAndDefer = function (t: any, e: string) {
+          t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (let i = 0; i < ttq.methods.length; i++) {
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        }
+        ttq.instance = function (t: any) {
+          const e = ttq._i[t] || [];
+          for (let n = 0; n < ttq.methods.length; n++) {
+            ttq.setAndDefer(e, ttq.methods[n]);
+          }
+          return e;
+        };
+        ttq.load("CUNQPEBC77U27ULH9000");
+        ttq.page();
+      };
+
+      loadTikTokPixel();
     }
   }, []);
 
@@ -132,6 +185,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <QueryParamsProvider>
         <Component {...pageProps} />
       </QueryParamsProvider>
+      <Script
+        id="tiktok-pixel"
+        strategy="afterInteractive"
+        src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CUNQPEBC77U27ULH9000"
+      />
     </>
   );
 }
