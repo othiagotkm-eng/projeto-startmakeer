@@ -1,6 +1,7 @@
 import router from "next/router";
 import { useState } from "react";
 import styles from "./styles.module.scss";
+import { FaInstagram } from "react-icons/fa";
 
 const Youtube = () => {
   const [lightPosition, setLightPosition] = useState({
@@ -30,7 +31,7 @@ const Youtube = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
-    router.push("https://m.youtube.com/@oreidosites");
+    router.push("https://www.instagram.com/relogioseacessorios_nagrife/");
   };
 
   return (
@@ -51,14 +52,22 @@ const Youtube = () => {
         />
         <div className={styles.content}>
           <div className={styles.icon}>
-            <img src="/youtube.svg" />
+            <a
+              href="https://www.instagram.com/relogioseacessorios_nagrife/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size={28} />
+            </a>
           </div>
-          <div className={styles.text}>
-            <h2>Perfil no Youtube</h2>
-            <h5>Vídeos e lives gratuitas</h5>
-          </div>
+
+
+        <div className={styles.text}>
+          <h2>Perfil no Instagram</h2>
+          <h5>@relogioseacessorios_nagrife</h5>
         </div>
-      </section>
+      </div>
+    </section >
     </>
   );
 };

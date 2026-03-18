@@ -14,12 +14,6 @@ import ZoomEffect from "@/components/Portuguese/ZoomEffect";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.ttq) {
-      window.ttq.track("ViewContent");
-    }
-  }, []);
-
   const pageTitle = "curso";
   return (
     <>
