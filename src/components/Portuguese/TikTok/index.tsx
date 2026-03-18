@@ -29,7 +29,7 @@ const TikTok = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    router.push("https://www.tiktok.com/@oreidosites");
+    router.push(""); /*link dos patrocionadores*/
   };
 
   return (
@@ -50,11 +50,11 @@ const TikTok = () => {
         />
         <div className={styles.content}>
           <div className={styles.icon}>
-            <img src="/tiktok2.svg" />
+            <img src="" />
           </div>
           <div className={styles.text}>
-            <h2>Perfil no TikTok</h2>
-            <h5>Vídeos e lives gratuitas</h5>
+            <h2>Patrocinadores</h2>
+            <h5>....</h5>
           </div>
         </div>
       </section>

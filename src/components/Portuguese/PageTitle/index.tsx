@@ -8,8 +8,8 @@ interface PageTitleProps {
 
 const PageTitle = ({ title, isAdmin = false }: PageTitleProps) => {
   const completeTitle = isAdmin
-    ? `Rei dos Sites | ${title}`
-    : `Rei dos Sites | ${title}`;
+    ? `NaGrife | ${title}`
+    : `NaGrife | ${title}`;
 
   return (
     <Head>

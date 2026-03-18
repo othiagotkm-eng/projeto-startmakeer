@@ -15,7 +15,7 @@ export default function Home() {
       <section className={styles.container}>
         <div className={styles.content}>
           <div className={styles.logoSection}>
-            <img src="/Logo.gif" />
+            <img src="/fotologonagrife.png" />
           </div>
           <div className={styles.top}>
             <div className={styles.left}>
@@ -31,7 +31,7 @@ export default function Home() {
             <TikTok />
           </div>
           <div className={styles.footer}>
-            <img src="/Logo.gif" />
+            <img src="/fotologonagrife.png" />
           </div>
         </div>
       </section>
