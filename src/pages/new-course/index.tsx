@@ -1,88 +1,69 @@
 import Head from "next/head";
 import styles from "./styles/estoque.module.scss";
 
-const produtos = [
-  {
-    id: 1,
-    nome: "Relógio Prata Premium",
-    preco: "R$ 199,90",
-    imagem: "/relogio1.jpg",
-    categoria: "Relógio",
-  },
-  {
-    id: 2,
-    nome: "Relógio Dourado Classic",
-    preco: "R$ 219,90",
-    imagem: "/relogio2.jpg",
-    categoria: "Relógio",
-  },
-  {
-    id: 3,
-    nome: "Relógio Black Steel",
-    preco: "R$ 239,90",
-    imagem: "/relogio3.jpg",
-    categoria: "Relógio",
-  },
-  {
-    id: 4,
-    nome: "Óculos Preto Lifestyle",
-    preco: "R$ 149,90",
-    imagem: "/oculos1.jpg",
-    categoria: "Óculos",
-  },
-  {
-    id: 5,
-    nome: "Óculos Silver Premium",
-    preco: "R$ 169,90",
-    imagem: "/oculos2.jpg",
-    categoria: "Óculos",
-  },
-  {
-    id: 6,
-    nome: "Óculos Elegance",
-    preco: "R$ 159,90",
-    imagem: "/oculos3.jpg",
-    categoria: "Óculos",
-  },
+const fotoPrincipal = "/foto1.jpg";
+
+const fotosGaleria = [
+  "/foto2.jpg",
+  "/foto3.jpg",
+  "/foto4.jpg",
+  "/foto5.jpg",
+  "/foto6.jpg",
 ];
 
-export default function Home() {
-  const handleComprar = (produto: { nome: string; preco: string }) => {
-    const numero = "5581999999999";
-    const mensagem = `Olá! Tenho interesse no produto: ${produto.nome} - ${produto.preco}`;
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, "_blank");
-  };
-
+export default function SobreMim() {
   return (
     <>
       <Head>
-        <title>Estoque de Relógios e Óculos</title>
+        <title>Sobre Mim | Start Maker</title>
       </Head>
 
-      <main className={styles.page}>
+      <main className={styles.aboutPage}>
         <section className={styles.hero}>
-          <div className={styles.overlay}></div>
-          <div className={styles.heroContent}>
-            <h1>Estoque de Relógios e Óculos</h1>
-            <p>Confira todos os modelos disponíveis para pronta entrega.</p>
+          <img
+            src={fotoPrincipal}
+            alt="Foto principal"
+            className={styles.heroImage}
+          />
+
+          <div className={styles.heroOverlay}>
+            <p className={styles.kicker}>FILMAKER | FOTOGRAFIAS</p>
+            <h1>START MAKER</h1>
+            <span>Conheça mais sobre mim e meu trabalho</span>
           </div>
         </section>
 
-        <section className={styles.catalogo}>
-          <h2>Nossos produtos</h2>
+        <section className={styles.aboutContent}>
+          <h2>Sobre Mim</h2>
 
-          <div className={styles.grid}>
-            {produtos.map((produto) => (
-              <div key={produto.id} className={styles.card}>
-                <img src={produto.imagem} alt={produto.nome} />
-                <span className={styles.categoria}>{produto.categoria}</span>
-                <h3>{produto.nome}</h3>
-                <p className={styles.preco}>{produto.preco}</p>
+          <p>
+            Sou apaixonado por fotografia, filmagens e criação de conteúdo visual.
+            Meu objetivo é transformar ideias em imagens marcantes, com identidade,
+            qualidade e emoção.
+          </p>
 
-                <button onClick={() => handleComprar(produto)}>
-                  Comprar no WhatsApp
-                </button>
+          <p>
+            Trabalho buscando sempre entregar um resultado profissional, moderno e
+            que valorize cada detalhe de cada projeto.
+          </p>
+
+          <a
+            href="https://wa.me/5581SEUNUMERO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.whatsappButton}
+          >
+            Falar no WhatsApp
+          </a>
+        </section>
+
+        <section className={styles.gallerySection}>
+          <h2>Meu Trabalho</h2>
+
+          <div className={styles.gallery}>
+            {fotosGaleria.map((foto, index) => (
+              <div key={index} className={styles.galleryCard}>
+                <img src={foto} alt={`Galeria ${index + 1}`} />
               </div>
             ))}
           </div>

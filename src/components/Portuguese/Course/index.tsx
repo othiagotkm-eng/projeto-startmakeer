@@ -1,88 +1,68 @@
-import router from "next/router";
-import { useState } from "react";
-import styles from "./styles.module.scss";
-interface CourseProps {
-  urlParams: string;
-}
-const Course = ({ urlParams }: CourseProps) => {
-  const [lightPosition, setLightPosition] = useState({
-    x: 0,
-    y: 0,
-    visible: false,
-  });
-  const scaleFactor = 1.05;
+import Head from "next/head";
+import styles from "./styles/estoque.module.scss";
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    const overlaySize = 100; // Half the overlay size for centering
-    const { left, top } = event.currentTarget.getBoundingClientRect();
-    const adjustedX = (event.clientX - left) / scaleFactor;
-    const adjustedY = (event.clientY - top) / scaleFactor;
+const fotoPrincipal = "/foto1.jpg";
 
-    setLightPosition({
-      x: adjustedX - overlaySize,
-      y: adjustedY - overlaySize,
-      visible: true,
-    });
-  };
+const fotosGaleria = [
+  "/foto2.jpg",
+  "/foto3.jpg",
+  "/foto4.jpg",
+  "/foto5.jpg",
+  "/foto6.jpg",
+];
 
-  const handleMouseLeave = () => {
-    setLightPosition((prevPosition) => ({
-      ...prevPosition,
-      visible: false,
-    }));
-  };
-
-  const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-
-    if (typeof window !== "undefined") {
-      import("react-facebook-pixel")
-        .then((module) => {
-          const ReactPixel = module.default;
-          ReactPixel.track("ViewContent", {
-            content_name: "Curso",
-            value: 97.0,
-            currency: "BRL",
-          });
-        })
-        .catch((err) =>
-          console.error("Failed to load React Facebook Pixel", err)
-        );
-    }
-
-    router.push(`/new-course?${urlParams}`);
-  };
-
+export default function SobreMim() {
   return (
     <>
-      <section
-        className={styles.container}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        onClick={handleClick}
-      >
-        <div
-          className={styles.lightEffect}
-          style={{
-            background: `radial-gradient(circle closest-side, rgba(255, 255, 255, 0.3), transparent)`,
-            transform: `translate(${lightPosition.x}px, ${lightPosition.y}px)`,
-            opacity: lightPosition.visible ? 1 : 0,
-          }}
-        />
-        <div className={styles.content}>
-          <div className={styles.icon}>
-            <img src="/newicon.png" />
+      <Head>
+        <title>Sobre Mim | Start Maker</title>
+      </Head>
+
+      <main className={styles.aboutPage}>
+        <section className={styles.aboutHero}>
+          <div className={styles.imageSide}>
+            <img src={fotoPrincipal} alt="Start Maker" />
           </div>
-          <div className={styles.text}>
-            <h2>Rélogios e Acessórios</h2>
-            <h5>
-              Aqui você vai conferir nosso estoque
-            </h5>
+
+          <div className={styles.textSide}>
+            <p className={styles.kicker}>FILMAKER | FOTOGRAFIAS</p>
+            <h1>START MAKER</h1>
+            <h2>Sobre Mim</h2>
+
+            <p>
+              Sou apaixonado por fotografia, filmagens e criação de conteúdo
+              visual. Meu objetivo é transformar ideias em imagens marcantes,
+              com identidade, qualidade e emoção.
+            </p>
+
+            <p>
+              Trabalho buscando sempre entregar um resultado profissional,
+              moderno e que valorize cada detalhe de cada projeto.
+            </p>
+
+            <a
+              href="https://wa.me/5581SEUNUMERO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappButton}
+            >
+              Falar no WhatsApp
+            </a>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className={styles.gallerySection}>
+          <h2>Meu Trabalho</h2>
+
+          <div className={styles.gallery}>
+            {fotosGaleria.map((foto, index) => (
+              <div key={index} className={styles.galleryCard}>
+                <img src={foto} alt={`Galeria ${index + 1}`} />
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </>
   );
-};
-
-export default Course;
+}

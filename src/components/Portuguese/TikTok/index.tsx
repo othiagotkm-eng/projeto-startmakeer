@@ -53,7 +53,7 @@ const TikTok = () => {
             <img src="" />
           </div>
           <div className={styles.text}>
-            <h2>Patrocinadores</h2>
+            <h2>Feedback</h2>
             <h5>....</h5>
           </div>
         </div>

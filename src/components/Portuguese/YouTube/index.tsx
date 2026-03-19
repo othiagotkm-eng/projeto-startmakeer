@@ -31,7 +31,7 @@ const Youtube = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
-    router.push("https://www.instagram.com/relogioseacessorios_nagrife/");
+    router.push("https://www.instagram.com/startmakeer/");
   };
 
   return (
@@ -53,7 +53,7 @@ const Youtube = () => {
         <div className={styles.content}>
           <div className={styles.icon}>
             <a
-              href="https://www.instagram.com/relogioseacessorios_nagrife/"
+              href="https://www.instagram.com/startmakeer/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +64,7 @@ const Youtube = () => {
 
         <div className={styles.text}>
           <h2>Perfil no Instagram</h2>
-          <h5>@relogioseacessorios_nagrife</h5>
+          <h5>@startmakeer</h5>
         </div>
       </div>
     </section >
