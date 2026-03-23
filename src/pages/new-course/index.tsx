@@ -6,7 +6,7 @@ const fotoPrincipal = "1.jpg";
 const fotosGaleria = [
   "/CARROSEL 1.png",
   "/CARROSEL 2.png",
-  "/CARROSERL 3.png",
+  "/CARROSEL 3.png",
   "/CARROSSEL 4.png",
 
 ];

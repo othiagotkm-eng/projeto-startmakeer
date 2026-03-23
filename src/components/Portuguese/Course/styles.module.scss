@@ -15,8 +15,8 @@
     bottom: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("/FOTOKARLA.png");
-    background-position: center 5%;
-    background-size: 65%;
+    background-position: center 4%;
+    background-size: 80%;
     filter: blur(5px);
     border-radius: 20px;
     z-index: 0;
@@ -86,4 +86,26 @@
     font-weight: 400;
     line-height: 24px; /* 150% */
   }
+}
+
+.hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+
+.heroOverlay {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+
+.kicker {
+  letter-spacing: 4px;
+  font-size: 12px;
 }

@@ -5,22 +5,13 @@ interface CourseProps {
   urlParams: string;
 }
 
-<section
-  className={styles.hero}
-  style={{ backgroundImage: "url('/FOTOKARLA.png')" }}
->
-  <div className={styles.heroOverlay}>
-    <p className={styles.kicker}>FILMAKER | FOTOGRAFIAS</p>
-    <h1>START MAKER</h1>
-    <span>Conheça mais sobre mim e meu trabalho</span>
-  </div>
-</section>
 
 const Course = ({ urlParams }: CourseProps) => {
   const [lightPosition, setLightPosition] = useState({
     x: 0,
     y: 0,
     visible: false,
+    
   });
   const scaleFactor = 1.05;
 
@@ -65,9 +56,10 @@ const Course = ({ urlParams }: CourseProps) => {
     router.push(`/new-course?${urlParams}`);
   };
 
-  return (
-    <>
+  return (      
       <section
+
+      
         className={styles.container}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -93,7 +85,7 @@ const Course = ({ urlParams }: CourseProps) => {
           </div>
         </div>
       </section>
-    </>
+    
   );
 };
 

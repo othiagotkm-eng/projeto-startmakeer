@@ -1,37 +1,15 @@
 .aboutPage {
-  font-size: 1px;
   color: #ffffff;
   min-height: 100vh;
-  
-}
-
-.galleryCard {
-  width: 300px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.galleryImage1,
-.galleryImage2,
-.galleryImage3,
-.galleryImage4 {
-  max-width: 250%;
-  max-height: 250%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  ;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh;
-  background-image: url('/LOGOSTAR.png');
+  min-height: 90vh;
+  background-image: url("/LOGOSTAR.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,15 +53,16 @@
 }
 
 .heroOverlay h1 {
-  font-size: 96px;
+  font-size: clamp(42px, 8vw, 96px);
   line-height: 1;
   margin: 0 0 18px;
   font-weight: 700;
 }
 
 .heroOverlay span {
-  font-size: 22px;
+  font-size: clamp(16px, 2.5vw, 22px);
   color: #e5e5e5;
+  max-width: 700px;
 }
 
 .aboutContent {
@@ -96,12 +75,12 @@
 }
 
 .aboutContent h2 {
-  font-size: 64px;
+  font-size: clamp(32px, 6vw, 64px);
   margin-bottom: 28px;
 }
 
 .aboutContent p {
-  font-size: 22px;
+  font-size: clamp(16px, 2.4vw, 22px);
   line-height: 1.8;
   color: #d4d4d4;
   margin-bottom: 20px;
@@ -131,12 +110,12 @@
 
 .gallerySection h2 {
   text-align: center;
-  font-size: 56px;
+  font-size: clamp(30px, 5vw, 56px);
   margin-bottom: 40px;
 }
 
 .gallery {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
@@ -144,31 +123,34 @@
 }
 
 .galleryCard {
-  width: 100%;
+  width: min(100%, 300px);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex: 1 1 280px;
 }
 
 .galleryCard img {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
   display: block;
   border-radius: 18px;
 }
 
+.galleryImage1,
+.galleryImage2,
+.galleryImage3,
+.galleryImage4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 1100px) {
-  .heroGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 33.33vh;
-  }
-
-  .overlay h1 {
-    font-size: 72px;
-  }
-
-  .overlay span {
-    font-size: 18px;
-  }
-
   .aboutContent h2 {
     font-size: 48px;
   }
@@ -180,24 +162,16 @@
   .gallerySection h2 {
     font-size: 42px;
   }
-
-  .gallery {
-     display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
-  }
 }
 
 @media (max-width: 700px) {
   .hero {
     min-height: 80vh;
+    background-position: center;
   }
 
-  .heroGrid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 33.33vh;
+  .heroOverlay {
+    padding: 16px;
   }
 
   .kicker {
@@ -205,11 +179,11 @@
     letter-spacing: 4px;
   }
 
-  .overlay h1 {
+  .heroOverlay h1 {
     font-size: 44px;
   }
 
-  .overlay span {
+  .heroOverlay span {
     font-size: 16px;
   }
 
@@ -230,11 +204,12 @@
   }
 
   .gallery {
-    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .galleryCard img {
+  .galleryCard {
+    width: 100%;
+    max-width: 100%;
     height: 320px;
   }
 }
-
