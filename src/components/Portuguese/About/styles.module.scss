@@ -1,9 +1,28 @@
 .container {
-  background: url("/last.svg") lightgray 0px -38.04px / 100% 107.977% no-repeat;
+  background-image: url("/last.svg");
+  background-color: #a09f9e;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+  }
+
   @media screen and (max-width: 768px) {
     background-position: 60% center;
+    min-height: auto;
+    padding-block: 80px;
   }
 }
 
@@ -23,10 +42,19 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding-left: 81px;
+  padding: 40px;
   gap: 20px;
+  width: min(100%, 720px);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+
   @media screen and (max-width: 768px) {
-    padding-left: 0px;
+    padding: 25px;
+    width: 100%;
   }
 }
 
