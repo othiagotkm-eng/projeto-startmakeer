@@ -29,12 +29,14 @@ const BannerMobile = () => {
                             Um site profissional, rápido e otimizado para atrair
                             mais clientes e aumentar suas vendas.
                         </p>
-                        <button
+                        <a
+                            href="https://wa.me/83985770452?text=Olá,%20vim%20pelo%20site%20e%20quero%20fazer%20um%20orçamento"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={styles.button}
-                            onClick={handleModalOpen}
                         >
                             FAZER ORÇAMENTO GRATUITO
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>

@@ -27,10 +27,12 @@ const Cost = () => {
     setLightPosition((prevPosition) => ({ ...prevPosition, visible: false }));
   };
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    router.push("/organic/orcamento");
-  };
+ const handleClick = () => {
+  window.open(
+    "https://wa.me/5581985770452?text=Olá,%20vim%20pelo%20site%20e%20quero%20fazer%20um%20orçamento",
+    "_blank"
+  );
+};
 
   return (
     <>
