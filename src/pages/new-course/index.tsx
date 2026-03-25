@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "./styles/estoque.module.scss";
 
-const fotoPrincipal = "1.jpg";
+
 
 const fotosGaleria = [
   "/CARROSEL 1.png",
@@ -20,11 +20,7 @@ export default function SobreMim() {
 
       <main className={styles.aboutPage}>
         <section className={styles.hero}>
-          <img
-            src={fotoPrincipal}
-            alt="Foto principal"
-            className={styles.heroImage}
-          />
+         
 
           <div className={styles.heroOverlay}>
             <p className={styles.kicker}>FILMAKER | FOTOGRAFIAS</p>
