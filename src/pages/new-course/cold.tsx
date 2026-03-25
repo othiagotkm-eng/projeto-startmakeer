@@ -15,8 +15,8 @@ import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== "undefined" && window.ttq) {
-      window.ttq.track("ViewContent");
+    if (typeof window !== "undefined" && (window as any).ttq) {
+      (window as any).ttq.track("ViewContent");
     }
   }, []);
 
