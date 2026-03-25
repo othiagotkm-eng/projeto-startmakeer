@@ -28,12 +28,12 @@ const Price = ({ title }: PriceProps) => {
                     console.error('Failed to load React Facebook Pixel', err)
                 );
 
-            if (window.gtag) {
-                window.gtag('event', 'InitiateCheckout', {
-                    event_category: 'engagement',
-                    event_label: 'Curso Checkout',
+            if (typeof window !== "undefined" && (window as any).gtag) {
+                (window as any).gtag("event", "InitiateCheckout", {
+                    event_category: "engagement",
+                    event_label: "Curso Checkout",
                     value: 49.0,
-                    currency: 'BRL',
+                    currency: "BRL",
                 });
             }
 
