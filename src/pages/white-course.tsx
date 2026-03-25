@@ -24,8 +24,8 @@ import WhiteFAQ from "@/components/New-Course/WhiteFAQ";
 
 export default function WhiteCourse() {
   useEffect(() => {
-    if (typeof window !== "undefined" && window.ttq) {
-      window.ttq.track("ViewContent");
+    if (typeof window !== "undefined" && (window as any).ttq) {
+      (window as any).ttq.track("ViewContent");
     }
   }, []);
 

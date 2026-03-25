@@ -17,8 +17,8 @@ export default function Home() {
   const [showFullContent, setShowFullContent] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.ttq) {
-      window.ttq.track("ViewContent");
+    if (typeof window !== "undefined" && (window as any).ttq) {
+      (window as any).ttq.track("ViewContent");
     }
 
     // Timer para mostrar o conteúdo completo após 30 segundos
