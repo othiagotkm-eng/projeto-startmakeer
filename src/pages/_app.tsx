@@ -4,6 +4,7 @@ import "animate.css/animate.compat.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { QueryParamsProvider } from "@/context/QueryContext";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <QueryParamsProvider>
         <Component {...pageProps} />
       </QueryParamsProvider>
+      <Analytics />
     </>
   );
 }
