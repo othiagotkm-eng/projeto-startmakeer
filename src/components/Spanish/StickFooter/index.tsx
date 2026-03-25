@@ -39,8 +39,8 @@ const StickFooter = ({ title }: StickFooterProps) => {
                 .catch((err) =>
                     console.error('Failed to load React Facebook Pixel', err)
                 );
-            if (window.gtag) {
-                window.gtag('event', 'InitiateCheckout', {
+            if (typeof window !== 'undefined' && (window as any).gtag) {
+                (window as any).gtag('event', 'InitiateCheckout', {
                     event_category: 'engagement',
                     event_label: 'Curso Checkout',
                     value: 17.0,
