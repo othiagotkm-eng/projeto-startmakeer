@@ -20,7 +20,7 @@ const Students = ({ title }: StudentsProps) => {
                 .then((module) => {
                     const ReactPixel = module.default;
                     ReactPixel.track('InitiateCheckout', {
-                        content_name: 'Curso',
+                        content_name: 'sobre mim',
                         value: 17.0,
                         currency: 'BRL',
                     });

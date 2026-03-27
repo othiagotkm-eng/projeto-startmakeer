@@ -33,7 +33,7 @@ export default function SobreMim() {
   <h2>Sobre Mim</h2>
 
   <p>
-    Sou apaixonado por fotografia, filmagens e criação de conteúdo visual...
+    Sou apaixonada por fotografia, filmagens e criação de conteúdo visual...
   </p>
 
   <p>
