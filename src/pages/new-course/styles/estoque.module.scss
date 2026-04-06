@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   left: -5%;
-  bottom: -70px;
+  bottom: -50px;
   width: 110%;
   height: 140px;
   background: #000000;
@@ -61,7 +61,7 @@
 
 .heroOverlay span {
   font-size: clamp(16px, 2.5vw, 22px);
-  color: #e5e5e5;
+  color: #ffffff;
   max-width: 700px;
 }
 
@@ -82,7 +82,7 @@
 .aboutContent p {
   font-size: clamp(16px, 2.4vw, 22px);
   line-height: 1.8;
-  color: #d4d4d4;
+  color: #fffefe;
   margin-bottom: 20px;
 }
 
@@ -149,10 +149,11 @@
   display: block;
 }
 
-.galleryImage3 {
-  width: 92%;
-  height: 92%;
+.galleryCard .galleryImage3 {
+  width: 235%;
+  height: 100%;
   object-fit: cover;
+  object-position: left center;
   display: block;
 }
 
