@@ -43,8 +43,7 @@ const StickFooter = ({ title }: StickFooterProps) => {
                 (window as any).gtag('event', 'InitiateCheckout', {
                     event_category: 'engagement',
                     event_label: 'Curso Checkout',
-                    value: 17.0,
-                    currency: 'BRL',
+                     currency: 'BRL',
                 });
             }
             let redirectUrl = 'https://pay.kiwify.com.br/K0j9Sec';
@@ -66,7 +65,7 @@ const StickFooter = ({ title }: StickFooterProps) => {
                 </div>
                 <div className={styles.button}>
                     <button onClick={handleClick} id="iniciar-checkout">
-                        <p>INSCRIBIRME</p>
+                        <p>se ESCREVA</p>
                     </button>
                 </div>
             </div>
